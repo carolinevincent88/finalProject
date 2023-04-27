@@ -4,5 +4,10 @@ pandas==1.5.3
 requests==2.7.0
 geopy
 geopandas
+plotly
 plotly.express
+plotly-geo==1.0.0
+pyshp==1.2.10
+shapely==1.6.3
 nbformat
+mapbox
