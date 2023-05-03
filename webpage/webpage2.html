@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Cambridge Crime Data </title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<body> This website is designed for the 1.00 - Engineering Computation and Data Science - Final Project. For this project, we explore a dataset provided by the City of Cambridge that reports crimes within the city dating back over the past decade. We analyze trends, plot the data on a map, and try to predict different aspects of crime within Cambridge.
+    
+    We mapped the data points of crimes that occurred to a map of the city of Cambridge. As is, the file only imports the first 1,000 records of crime due to time considerations of running the code and the capable computing power of Codespaces. 
+    
+    The heatmap maps the same data from "mapping," but now visualizes the data as a dynamic heat map that changes by hour of the day.</body>
+<div id="map"></div>
+<script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+	mapboxgl.accessToken = 'pk.eyJ1IjoiY2Fyb2xpbmV2aW5jZW50IiwiYSI6ImNsZ3h2cGlhaDAwdHUzZG84dGpxd21uNXcifQ.Xuh9ljyuVg2dwh55Ox28dg';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+style: 'mapbox://styles/mapbox/streets-v12', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
+ 
